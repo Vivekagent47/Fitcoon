@@ -40,3 +40,166 @@
     font-size: 60px;
     padding: 210px 0;
 }
+
+.footer-nav {
+    position: relative;
+    display: flex;
+    background: #363F48;
+}
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 30px 0;
+    margin: auto;
+}
+.footer-nav ul li {
+    padding: 0 10px;
+}
+
+.footer-nav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F5F5F5;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+
+.footer-bottom {
+    padding: 30px 0 10px 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #96A0A9;
+    position: relative;
+    background: #45505B;
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer-bottom ul {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-bottom ul li {
+    padding: 0 5px;
+}
+.footer-bottom ul li img {
+    max-width: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.container form {
+    position: relative;
+    width: 100%;
+}
+.container form h2 {
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.container form .inputBox {
+    position: relative;
+    margin-bottom: 40px;
+}
+.container form .inputBox:last-child {
+    margin-bottom: 0;
+}
+.container form .inputBox input , 
+.container form .inputBox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #2a2f36;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid #cfcfcf;
+}
+.container form .inputBox textarea {
+    height: 100px;
+}
+.container form .inputBox input:focus,
+.container form .inputBox textarea:focus {
+    border-bottom: 2px solid #00a591;
+}
+.container form .inputBox input[type="submit"] {
+    background: none;
+    padding: 10px 40px;
+    margin-top: -10px;
+    cursor: pointer;
+    width: 200px;
+    color: #00a591;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    float: right;
+}
+.container form .inputBox input[type="submit"]:hover {
+  background: #00a591;
+  color: #fff;
+}
+@media (max-width: 800px) {
+    .container form {
+        position: relative;
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .container form h2 {
+        font-size: 1.6em;
+    }
+    .container form .inputBox input , 
+    .container form .inputBox textarea {
+        font-size: 14px;
+    }
+    .container form .inputBox textarea {
+        height: 100px;
+    }
+    .container form .inputBox input[type="submit"] {
+        display: flex;
+        margin: auto;
+    }
+}
+
+.contact-details {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-details h2 {
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-details div {
+    padding: 20px 0;
+}
+.contact-details div h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #333333;
+}
+.contact-details div p {
+    color: #797979;
+}
