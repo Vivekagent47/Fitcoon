@@ -203,3 +203,9 @@
 .contact-details div p {
     color: #797979;
 }
+
+@media (max-width: 900px) {
+    .footer-nav {
+        display: none !important;
+    }
+}

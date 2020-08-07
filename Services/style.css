@@ -104,6 +104,7 @@
     /*Define our columns */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     grid-gap: 4em;
+    padding-top: 100px;
 }
 
 .main article .card-img {
@@ -126,4 +127,61 @@
 }
 .main .card-text p {
     color: #716C80;
+}
+
+.other-services {
+    padding: 100px 0 200px 0;
+}
+.other-services h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333333;
+    padding: 0 0 20px 0;
+}
+.other-services .dash-line {
+    content: "";
+    background: #bb9d49;
+    width: 60px;
+    height: 5px;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.other {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%; 
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: max-content; 
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 4em;
+}
+.other article .upper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 20px 0;
+}
+.other article .upper img {
+    max-width: 50px;
+    padding-right: 20px;
+}
+.other article .upper h3 {
+    margin: auto 0;
+    font-size: 24px;
+    color: #333333;
+}
+.other article p {
+    padding-left: 30px;
+    font-size: 20px;
+    color: #999999;
+}
+@media (max-width: 900px) {
+    .footer-nav {
+        display: none !important;
+    }
 }
