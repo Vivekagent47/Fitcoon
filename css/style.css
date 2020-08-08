@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     position: relative;
@@ -79,6 +79,67 @@ img {
     color: #fff;
     font-size: 14px;
 }
+.home-search {
+    justify-content: center;
+    padding: 50px 0;
+}
+.home-search .search-inside {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+.search-inside input{
+    padding: 5px;
+    height: 100%;
+    font-size: 20px;
+}
+.search-inside input:nth-child(1){
+    width: 300px;
+}
+.search-inside input::placeholder {
+    color: #7f7f7f;
+    font-size: 14px;
+}
+.search-inside button {
+    padding: 5px 30px;
+    background: rgba(32,131,172,0.93);
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .home-search .search-inside {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.ppr {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.ppr-grid {
+    display: inline-flex;
+    justify-content: center;
+}
+.ppr-grid .card {
+    
+    background: rgba(32,131,172);
+    max-width: max-content;
+    padding: 50px;
+    margin: -50px 10px 0 10px;
+    border-radius: 4px;
+}
+.ppr-grid .card a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ppr-grid .card:hover {
+    background: #363F48;;
+}
+
+
 
 .google-store {
     display: flex;
@@ -217,4 +278,54 @@ img {
         justify-content: center;
         align-items: center;
     }
+}
+
+.container {
+    padding: 100px 0;
+}
+.container h3 {
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+.provid {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%; 
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: max-content; 
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 2em;
+    /* padding-top: 100px; */
+}
+.provid .provid-card .card-img {
+    background: #ebf6ff;
+}
+.card-img img {
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    max-width: 200px;
+}
+.card-text {
+    background: #ffffff;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+    margin-top: -30px;
+    padding: 20px;
+}
+.card-text h3 {
+    font-size: 24px;
+    color: #000000;
+}
+.card-text p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333232;
 }
