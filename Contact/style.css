@@ -158,10 +158,14 @@
   color: #fff;
 }
 @media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
     .container form {
         position: relative;
-        width: 100%;
-        padding: 0 10px 0 10px;
+        max-width: 80%;
+        padding: 0 0 100px 0;
+        margin: auto;
     }
     .container form h2 {
         font-size: 1.6em;
@@ -207,5 +211,10 @@
 @media (max-width: 900px) {
     .footer-nav {
         display: none !important;
+    }
+    .contact-details {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
     }
 }

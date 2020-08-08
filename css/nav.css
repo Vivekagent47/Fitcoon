@@ -401,3 +401,8 @@ body .nav .nav-menu li a {
 .footer-bottom ul li img {
     max-width: 20px;
 }
+@media (max-width: 786px) {
+	.footer-nav {
+		display: none;
+	}
+}
