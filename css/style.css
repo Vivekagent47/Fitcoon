@@ -26,13 +26,13 @@ h1 {
 
 h3 {
     text-align: center;
-    color: #4a4444;
+    color: #7f7f7f;
     letter-spacing: 2px;
 }
 
 p {
     padding: 10px;
-    color: #4a4444;
+    color: #7f7f7f;
     text-align: justify;
 }
 
@@ -120,12 +120,15 @@ img {
 .ppr-grid {
     display: inline-flex;
     justify-content: center;
+    width: max-content;
+    margin: auto;
 }
 .ppr-grid .card {
+    position: relative;
     text-decoration: none;
     background: rgba(32,131,172);
     max-width: max-content;
-    padding: 50px;
+    padding: 50px 30px;
     margin: -50px 10px 0 10px;
     border-radius: 4px;
 }
@@ -139,6 +142,157 @@ img {
     background: #363F48;;
 }
 
+@media screen and (max-width: 768px) {
+    .ppr-grid {
+        display: flex;
+    }
+    .ppr-grid .card {
+        padding: 30px 10px;
+        margin: -40px 10px 0 10px;
+    }
+}
+
+.zigzag {
+	margin: 0;
+	position: relative;
+	height: 16px;
+    z-index: 1;
+}
+.zigzag:before, .zigzag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.zigzag:before {
+    height: 12px;
+    top: 110%;
+    background: linear-gradient(-135deg, #7f7f7f 8px, transparent 0) 0 8px, linear-gradient( 135deg, #7f7f7f 8px, transparent 0) 0 8px;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 8px;
+}
+.zigzag:after {
+    height: 16px;
+    top: 100%;
+    background: linear-gradient(-135deg, #ffffff 8px, transparent 0) 0 8px, linear-gradient( 135deg, #ffffff 8px, transparent 0) 0 8px;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 8px;
+}
+.explore-location {
+    padding: 40px 0;
+}
+.explore-location-head {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.explore-location .explore-location-head img {
+    max-width: 14px;
+    padding: 0 10px;
+}
+.explore-location .explore-location-head h3{
+    letter-spacing: 0;
+    font-size: 14px;
+}
+.explore-location .explore-location-city {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%; 
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: 200px; 
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-gap: 2em;
+}
+.explore-location-city .city-card {
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.explore-location-city .city-card img {
+    border-radius: 8px;
+    width: 100%;
+}
+.explore-location-city .city-card h3 {
+    position: relative;
+    margin-top: -50px;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.explore-gym .explore-gym-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.explore-gym .explore-gym-head h3 {
+    font-size: 28px;
+    color: #222222;
+}
+.explore-gym .explore-gym-head p {
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.explore-gym .explore-gym-grid {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%; 
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: max-content; 
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 2em;
+} 
+.explore-gym-grid .card {
+    border-radius: 16px;
+    border: #c0c0c0 solid 1px;
+}
+.explore-gym-grid .card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 16px 16px 0 0;
+}
+.explore-gym-grid .card h3 {
+    text-align: left;
+    padding: 10px 20px;
+    color: #222222;
+}
+.explore-gym-grid .card .gym-rating {
+    display: flex;
+    padding: 0 0 20px 20px;
+    align-items: center;
+}
+.explore-gym-grid .card .gym-rating span {
+    background: #73CF42;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+.explore-gym-grid .card .card-gym-location {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-top: #c0c0c0 solid 1px;
+}
+.explore-gym-grid .card .card-gym-location img {
+    max-width: 14px;
+    /* padding-left: 20px; */
+}
 
 
 .google-store {
@@ -281,7 +435,7 @@ img {
 }
 
 .container {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 .container h3 {
     font-size: 36px;
