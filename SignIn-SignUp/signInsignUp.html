@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fitcoon-User</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>      <!-- JQuery --> 
+	<script src="./style.js"></script>														   <!-- For Navigation -->
+	<meta charset = "utf-8">
+	<link rel='shortcut icon' href='../img/fitcoon_logo.png' type='image/x-icon'>
+</head>
+<body>
+    <div class="container-shadow"></div>
+    <div class="container">
+      <div class="wrap">
+        <div class="headings">
+          <a id="sign-in" href="#" class="active"><span>Log In</span></a>
+          <a id="sign-up" href="#"><span>Sign Up</span></a>
+        </div>
+        <div id="sign-in-form">
+          <form>
+            <label for="username">Username or Email</label>
+            <input id="username" type="text" name="username" />
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" />
+            <input id="remember" type="checkbox" />
+            <label for="remember" id="rlabel">Keep me Signed in</label>
+            <input type="submit" class="button" name="submit" value="Sign in" />
+          </form>
+  
+          <footer>
+            <div class="hr"></div>
+            <div class="fp"><a href="">Forgot Password?</a></div>
+          </footer>
+        </div>
+        <div id="sign-up-form">
+          <form>
+            <label for="username">Username</label>
+            <input type="text" name="username" />
+            <label for="password">Email</label>
+            <input id="email" type="email" name="email" />
+
+            <p>Password will be E-mailed to you.</p>
+            <input type="submit" class="button" name="submit" value="Create Account" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
